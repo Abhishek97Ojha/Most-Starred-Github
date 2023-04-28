@@ -203,14 +203,14 @@ const Home = () => {
 										<Box sx={{ display: "flex" }}>
 											<Button variant="outlined">
 												<Typography>
-													{e.open_issues}
+													<p style={{textTransform : "capitalize"}}>Issues : {e.open_issues}</p>
 												</Typography>
 											</Button>
 											<Button
 												sx={{ margin: "0 7px" }}
 												variant="outlined">
 												<Typography>
-													{e.stargazers_count}
+													<p style={{textTransform : "capitalize"}}>Stars : {e.stargazers_count}</p>
 												</Typography>
 											</Button>
 										</Box>
@@ -231,6 +231,8 @@ const Home = () => {
 							</AccordionSummary>
 
 							<AccordionDetails>
+								<p style={{textAlign : "center"}}>High-charts are underdevelopment and I am working on it, soon it will be updated.</p>
+								<p style={{textAlign : "center"}}>During deployment stage, it's not supporting high-charts.</p>
 								{/* {extraDataFetched === true && (
 									<HighchartsReact
 										highcharts={Highcharts}

@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Most Starred Repo (Company Project - 01)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+The task is to implement a small webapp that will list the most starred Github repos that were created in the last 30 days. There will also be a simple drill down feature that displays a time series graph of various metrics for the given repository. You'll be fetching the sorted JSON data directly from the Github API.
 
-## Available Scripts
+## Hosted Link
 
-In the project directory, you can run:
+Open [https://most-starred-github-4ve7.vercel.app/](https://most-starred-github-4ve7.vercel.app/) to view it in your browser.
 
-### `npm start`
+## Github Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://github.com/Abhishek97Ojha/Most-Starred-Github](https://github.com/Abhishek97Ojha/Most-Starred-Github) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Api provider [api.github.com](api.github.com)
+- https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc
+- https://api.github.com/repos/octocat/hello-world/stats/code_frequency
 
-### `npm test`
+## Library Used :
+- React *("^18.2.0")*
+- React-Dom *("^18.2.0")*
+- React-Scripts *("5.0.1")*
+- React-Icons *("^4.8.0")*
+- Axios *("^1.3.6")*
+- Highcharts-react-official *("^3.2.0")*
+- React-Redux *("^8.0.5")*
+- Redux-saga *("^1.2.3")*
+- Material Ui *("^5.12.1")*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- As a User I should be able to list the most starred Github repos that were created in the last 1 week, 2 weeks, 1 month.
+- As a User I should be able to identify period of time to search for most starred repos.
+- As a User I should see the results as a list. One repository per row.
+- As a User I should be able to see for each repo/row the following details : 
+    1.Repository name 
+    2.Repository description 
+    3.Number of stars for the repo. 
+    4.Number of issues for the repo. 
+    5.Username and avatar of the owner.
+- As a User I should be able to drill down into each repo and see the commit activity a weekly basis for up to a year of the most recent history of the repo
 
-### `npm run build`
+## Technologies
+- ReactJS : ReactJS is a popular front-end library that allows you to build reusable components to create a dynamic user interface. It provides state management capabilities, which can make it easier to manage the data and state of your application.
+- Highcharts : Highcharts is a popular JavaScript library for creating interactive and customizable charts and graphs. It is widely used for data visualization in web applications and is compatible with various browsers and platforms.
+- HTML : HTML is a markup language that is used to create the structure and content of your web pages. It provides a range of elements and tags that can be used to create headings, paragraphs, lists, and other types of content.
+- CSS : CSS is a stylesheet language that is used to add style and formatting to your web pages. It provides a range of properties and values that can be used to adjust the size, color, font, and layout of your content.
+- Redux : Redux is a predictable state container for JavaScript applications. It is often used in conjunction with React, a popular JavaScript library for building user interfaces.
+- Redux-Saga : Redux Saga is a middleware library for Redux that helps manage side effects, such as making API calls, handling asynchronous tasks, and coordinating complex interactions between different parts of an application.
+- React-Redux : React Redux is a library that provides a way to connect React components with Redux store, which helps manage the state of an application.
+- Media queries : Media queries are a feature in CSS that allow web developers to apply different styles to a web page based on the characteristics of the device or screen it is being viewed on.
+- Git : Git is a version control system that allows you to manage and track changes to your codebase. It helps you to collaborate with others and keep track of your project history.
+- GitHub : GitHub is a web-based platform that allows you to host and manage your Git repositories. It provides a range of features, such as collaboration tools, issue tracking, and pull requests, to help you work on your project with others.
+- Vercel: Vercel is a cloud platform that specializes in hosting and deploying serverless web applications. It provides a range of features and tools to help you build, deploy, and manage your web applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
